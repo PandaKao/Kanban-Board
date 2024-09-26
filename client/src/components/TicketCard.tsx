@@ -2,7 +2,6 @@ import { useNavigate } from 'react-router-dom';
 import { TicketData } from '../interfaces/TicketData';
 import { ApiMessage } from '../interfaces/ApiMessage';
 import { MouseEventHandler } from 'react';
-import withLoginCheck from './withLoginCheck.js';
 
 interface TicketCardProps {
   ticket: TicketData;
@@ -49,4 +48,4 @@ const TicketCard = ({ ticket, deleteTicket, checkLogin }: TicketCardProps) => {
   );
 };
 
-export default withLoginCheck(TicketCard);
+export default TicketCard;
