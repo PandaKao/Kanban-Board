@@ -60,6 +60,7 @@ return (
               key={status} 
               tickets={filteredTickets} 
               deleteTicket={deleteIndvTicket}
+              checkLogin={checkLogin}
             />
           );
         })}

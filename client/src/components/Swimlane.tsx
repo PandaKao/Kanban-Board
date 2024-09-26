@@ -1,7 +1,6 @@
 import TicketCard from './TicketCard';
 import { TicketData } from '../interfaces/TicketData';
 import { ApiMessage } from '../interfaces/ApiMessage';
-import withLoginCheck from './withLoginCheck.js';
 
 interface SwimlaneProps {
   title: string;
@@ -39,4 +38,4 @@ const Swimlane = ({ title, tickets, deleteTicket, checkLogin }: SwimlaneProps) =
   );
 };
 
-export default withLoginCheck(Swimlane);
+export default Swimlane;
