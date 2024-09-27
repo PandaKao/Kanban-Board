@@ -27,6 +27,7 @@ const Login = () => {
       Auth.login(data, navigate);
     } catch (err) {
       console.error('Failed to login', err);
+      setErrorMessage('Failed to login');
     }
   };
 
