@@ -13,7 +13,7 @@
     "client:build": "cd client && npm run build",
     "client:dev": "cd client && npm run dev",
     "build": "cd client && npm run build",
-    "postdeploy": "cd server && npm run seed",
+    "postbuild": "cd server && npm run seed",
     "render-build": "npm install && npm run build"
   },
   "keywords": [],
